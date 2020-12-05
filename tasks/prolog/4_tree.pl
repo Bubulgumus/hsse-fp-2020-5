@@ -13,7 +13,7 @@ balanced_tree(L, T) :-
 tree([], empty).
 
 tree(L, instant(Root, LeftSub, RightSub)) :-
-	split_tree(L, Left, [R|Right]),
+	split_tree(L, Left, [Root|Right]),
 	tree(Left, LeftSub),
 	tree(Right, RightSub).
 
