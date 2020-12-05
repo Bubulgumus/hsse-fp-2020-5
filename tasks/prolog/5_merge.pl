@@ -9,4 +9,4 @@ mrg([First|L1], [Second|L2], [First|R]) :-
                             mrg(L1, [Second|L2], R).
 mrg([First|L1], [Second|L2], [Second|R]) :- 
                             First >= Second, 
-						    mrg([First|L1], L2, R).
+                            mrg([First|L1], L2, R).
